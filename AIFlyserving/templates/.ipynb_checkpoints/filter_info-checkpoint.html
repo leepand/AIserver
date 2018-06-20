@@ -1,0 +1,119 @@
+
+{% include "header.html" %}
+<br />
+<head>
+    <title></title>
+
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="static/dist/css/main.css" rel="stylesheet">
+
+</head>
+<body>
+    
+<div class="container">
+    <div class="col-xs-12 col-md-10 col-md-offset-1">
+        <div class="row">
+            <div class="tab-content">
+
+  
+
+                <div role="tabpanel" class="tab-pane active" id="tab-filtering">
+                    <div class="panel panel-default">
+                      <div class="panel-heading clearfix">
+                        <h3 class="panel-title pull-left">Filtering</h3>
+                        <button type="button" class="btn btn-default pull-right clear-filter" style="padding: 3px 7px; margin-bottom: 0; font-size: 13px;">Clear</button>
+                      </div>
+                      <div class="panel-body">
+                          <div class="table-responsive">
+                            <table class="table table-hover active" id="filteredTable">
+                                <thead>
+                                    <tr class="filter-row active">
+                                        <th>
+                                            <select class='method form-control'>
+                                                <option value="ALL">ALL</option>
+                                                <option value="GET">GET</option>
+                                                <option value="POST">POST</option>
+                                                <option value="PUT">PUT</option>
+                                                <option value="DELETE">DELETE</option>
+                                                <option value="PATCH">PATCH</option>
+                                                <option value="COPY">COPY</option>
+                                                <option value="HEAD">HEAD</option>
+                                                <option value="OPTIONS">OPTIONS</option>
+                                                <option value="LINK">LINK</option>
+                                                <option value="UNLINK">UNLINK</option>
+                                                <option value="PURGE">PURGE</option>
+                                                <option value="LOCK">LOCK</option>
+                                                <option value="UNLOCK">UNLOCK</option>
+                                                <option value="PROPFIND">PROPFIND</option>
+                                                <option value="VIEW">VIEW</option>
+                                            </select>
+                                        </th>
+                                        <th><input type="text" class="filtered-name form-control"></th>
+                                        <th><input type="text" class="elapsed form-control"></th>
+                                        <th>
+                                            <input type="text" class="filtered-datepicker form-control">
+                                        </th>
+                                    </tr>
+                                    <tr>
+
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    </tr>
+                                </thead>
+                            </table>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="tab-settings">
+                    <div class="panel panel-default">
+                        <div class="panel-heading clearfix">
+                            <h3 class="panel-title pull-left">Settings</h3>
+                        </div>
+                        <div class="panel-body">
+                            <button type="button" class="btn btn-info dump-database"
+                                    style="padding: 3px 7px; margin-bottom: 0; font-size: 13px;">Dump current database
+                            </button>
+                            <button type="button" class="btn btn-danger delete-database"
+                                    style="padding: 3px 7px; margin-bottom: 0; font-size: 13px;">Delete all data
+                            </button>
+
+                            <div class="col-xs-12" style="margin-top: 10px;"></div>
+
+                            <div class="col-xs-12">
+                                <div class="col-xs-11"><div id="settings-info"></div></div>
+                                <div class="col-xs-1">
+                                    <button id="clear-settings-info" type="button" class="btn btn-default pull-right"
+                                            style="padding: 3px 7px; margin-bottom: 0; font-size: 13px;">Clear
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="modal fade filteredModal active" tabindex="-1" role="dialog" aria-labelledby="filteredModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    <div class="modal-body">
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+
+<script src="static/dist/js/vendor.js"></script>
+<script src="static/dist/js/main.js"></script>
+<script src="static/dist/js/settings.js"></script>
+</body>
+
+{% include "footer.html" %}

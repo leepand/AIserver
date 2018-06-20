@@ -1,0 +1,1 @@
+<__main__.HelloWorldModel instance at 0x10b6d0830>
