@@ -133,23 +133,23 @@ print(time.time()-t1)
 
 - Model info
 
-![home](/Users/leepand/Downloads/BigRLab_APIs/demoday_fs/github_leepand/AIserver/resources/home.jpg)
+![home](resources/home.jpg)
 
 
 
 - predict test
 
-![reference](/Users/leepand/Downloads/BigRLab_APIs/demoday_fs/github_leepand/AIserver/resources/reference.jpg)
+![reference](resources/reference.jpg)
 
 
 
 - Dashboard
 
-![dashboard1](/Users/leepand/Downloads/BigRLab_APIs/demoday_fs/github_leepand/AIserver/resources/dashboard1.jpg)
+![dashboard1](resources/dashboard1.jpg)
 
 
 
-![dashboard2](/Users/leepand/Downloads/BigRLab_APIs/demoday_fs/github_leepand/AIserver/resources/dashboard2.jpg)
+![dashboard2](resources/dashboard2.jpg)
 
 
 
